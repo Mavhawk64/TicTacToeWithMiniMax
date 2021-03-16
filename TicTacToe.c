@@ -109,7 +109,7 @@ int *computerMiniMaxGuess(int grid[3][3]) {
       if (grid[i][j] == 0) {
         grid[i][j] = -1;
         int score = findBestGuess(grid, 0, false);
-        printf("Score: %d\n", score);
+        //printf("Score: %d\n", score);
         grid[i][j] = 0;
         if(score > bestScore) {
           bestScore = score;
@@ -119,7 +119,7 @@ int *computerMiniMaxGuess(int grid[3][3]) {
       }
     }
   }
-  printf("Computer's Move: %d %d\n", move[0], move[1]);
+  //printf("Computer's Move: %d %d\n", move[0], move[1]);
   return move;
 }
 
